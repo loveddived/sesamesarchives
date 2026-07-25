@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mes Galeries</title>
+
+<style>
+body{
+    margin:0;
+    background:#0b0b0f;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#18181f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h2{
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mes Galeries</h1>
+<p>Collection personnelle</p>
+</header>
+
+<div class="gallery-grid">
+
+<a href="images/dressing/" class="card">
+<img src="https://placehold.co/600x400">
+<h2>Dressing</h2>
+</a>
+
+<a href="images/terrasse/" class="card">
+<img src="https://placehold.co/600x400">
+<h2>Terrasse</h2>
+</a>
+
+<a href="images/appartement/" class="card">
+<img src="https://placehold.co/600x400">
+<h2>Appartement</h2>
+</a>
+
+<a href="images/inspirations/" class="card">
+<img src="https://placehold.co/600x400">
+<h2>Inspirations</h2>
+</a>
+
+</div>
+
+</body>
+</html>
